@@ -13,7 +13,7 @@ to gmail.
 
 `curl -v -d '{"toAddress”:”abc@gmail.com","subject":"test","text":"test email from application"}' -H "Content-Type: application/json" -POST http://localhost:8080/postNotification`
 
-** How to encrypt the password**
+**How to encrypt the password**
 
 In order to send the email, we need to provide the `from email address` and the `password` to the application, specify it in `application.properties`  in the `src\main\resources`.
 Use the class `AESEncryption.java` in the source code to encrypt the password. 
