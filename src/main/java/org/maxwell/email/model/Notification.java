@@ -3,6 +3,7 @@ package org.maxwell.email.model;
 import com.fasterxml.jackson.annotation.JsonGetter;
 
 public class Notification {
+
 	private String toAddress;
 	private String subject;
 	private String text;

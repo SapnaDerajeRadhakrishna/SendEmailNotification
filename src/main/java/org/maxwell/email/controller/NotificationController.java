@@ -33,7 +33,7 @@ public class NotificationController {
 		String to = notification.getToAddress();
 		String subject = notification.getSubject();
 		String text = notification.getText();
-		LOGGER.info("recieved email notification for '{}' with subject '{}' and text '{}", to, subject, text);
+		LOGGER.info("recieved email notification for '{}' with subject '{}' and text '{}'", to, subject, text);
 		try {
 			mailerService.send(to, subject, text);
 		} catch (InvalidKeyException | NoSuchAlgorithmException | NoSuchPaddingException
@@ -44,6 +44,7 @@ public class NotificationController {
 			LOGGER.error("Messaging Exception ", e.getMessage());
 			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
 		}
+		LOGGER.info("sending 200 OK with success");
 		return ResponseEntity.status(HttpStatus.OK).build();
 	}
 
