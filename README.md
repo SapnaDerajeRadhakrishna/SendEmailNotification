@@ -17,4 +17,5 @@ to gmail.
 
 In order to send the email, we need to provide the `from email address` and the `password` to the application, specify it in `application.properties`  in the `src\main\resources`.
 Use the class `AESEncryption.java` in the source code to encrypt the password. 
-Please be kind enough not to commit the changes made to the `AESEncryption.java` when you try to generate the encrypted password
+
+_Please be kind enough not to commit the changes made to the `AESEncryption.java` when you try to generate the encrypted password_
