@@ -12,3 +12,4 @@ gradlew
 /build/
 *.log
 *.rtf
+.DS_Store
